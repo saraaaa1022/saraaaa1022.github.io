@@ -1,0 +1,38 @@
+#welcome {
+    background-color: #d86400;
+    color: #FFF;
+
+    .container {
+        padding: 5% 10%;
+
+        .title {
+            @include title(#FFF, 400);
+        }
+
+        .description {
+            font-weight: 300;
+            text-align: center;
+            line-height: 1.4;
+
+            &#break {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #welcome {
+        .container {
+
+            .title {
+                margin-top: 0;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
