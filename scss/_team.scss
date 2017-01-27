@@ -1,0 +1,57 @@
+#team {
+    background-color: #ecf0f1;
+    text-align: center;
+
+    .container {
+        .cover {
+            .content {
+                h2 {
+                    margin-top: 60px;
+                }
+
+                .board {
+                    .board-picture {
+                        width: 200px;
+                        height: 200px;
+                        background-size: cover;
+                        border-radius: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        padding: 15px 0;
+                    }
+                    
+                    .row {
+                        margin-top: 12px;
+                    }
+                }
+                .organizers {
+                    font-size: 20px;
+                    text-align: center;
+
+                    .team-picture {
+                        width: 150px;
+                        height: 150px;
+                        background-size: cover;
+                        border-radius: 100%;
+                        background-repeat: no-repeat;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                    }
+
+                    h3 {
+                        padding: 15px 0;
+                    }   
+                }
+            }
+        }
+    }
+}   
