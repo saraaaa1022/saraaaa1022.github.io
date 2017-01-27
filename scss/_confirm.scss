@@ -1,0 +1,179 @@
+#confirm {
+	padding: 0;
+    background: url(/static/img/background.jpg) no-repeat center center scroll;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10%;
+
+        .cover {
+            .content {
+                text-align: center;
+
+                #title {
+                    font-weight: 400;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .field-title {
+                    padding: 2% 0;
+                }
+
+                .info {
+                    border: solid 2px #fff;
+                    width: 40%;
+                    margin: 3% auto;
+                    padding: 2%;
+                }
+
+                .error {
+                    color: #e74c3c;
+                    width: 40%;
+                    margin: 0 auto;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .success {
+                    color: #2ecc71;
+                    width: 40%;
+                    margin: 0 auto;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                form {
+                    margin-top: 3%;
+
+                    #waiver-warning {
+                        font-size: 24px;
+                        font-size: 1.5vw;
+                        display: block;
+                        margin-bottom: 6px;
+                    }
+
+                    .field {
+                        width: 40%;
+                        margin: 0 auto;
+                        padding-bottom: 4%;
+
+                        select, input {
+                            width: 100%;
+
+                            &[type="checkbox"] + label {
+                                width: 70%;
+                            }
+
+                            &[type="checkbox"]:checked + label {
+                                background-color: #fff;
+                                color: #000;
+                            }
+
+                            &#latetime {
+                                display: none;
+
+                                &.showfield {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        label#mlh-agree, label#hackbcaone {
+                            margin-top: 2%;
+                            width: 100% !important;
+                        }
+
+                        .waiver-upload {
+                            button {
+                                padding: 7px 10px;
+                                border: solid 2px $primary-color;
+                                border-radius: 5px;
+                                -webkit-box-shadow: none;
+                                -moz-box-shadow: none;
+                                box-shadow: none;
+                                background-color: $primary-color;
+                                color: #fff;
+                                font-size: 20px;
+                                -webkit-transition: all 0.2s;
+                                -moz-transition: all 0.2s;
+                                transition: all 0.2s;
+
+                                &:hover {
+                                    background-color: #fff;
+                                    color: $primary-color;
+                                    border: solid 2px #fff;
+                                }
+                            }
+
+                            div {
+                                padding: 12px 10px !important;
+                                border-radius: 5px !important;
+                                font-size: 20px !important;
+                                line-height: initial !important;
+                                border: none !important;
+                                display: inline !important;
+                                vertical-align: initial !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #confirm {
+        .container {
+            .cover {
+                .content {
+                    .info {
+                        width: 100%;
+                    }
+
+                    form {
+                        #waiver-warning {
+                            font-size: 12px;
+                            display: block;
+                            margin-bottom: 6px;
+                        }
+                        .field, .info {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #confirm {
+        .container {
+            .cover {
+                .content {
+                    form {
+                        .field, .info {
+                            input[type="checkbox"] + label {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
