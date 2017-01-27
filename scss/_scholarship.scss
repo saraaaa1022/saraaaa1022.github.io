@@ -1,0 +1,94 @@
+#scholarship {
+	padding: 0;
+    height: 100%;
+
+	.container {
+		width: 100%;
+        height: 100%;
+        padding: 0;
+
+		.cover {
+			.content {
+				text-align: center;
+
+				.head {
+					padding: 10%;
+
+					.desc {
+						text-align: justify;
+						width: 70%;
+						margin: 0 auto;
+
+						#from {
+							text-align: center;
+						}
+					}
+				}
+
+				.form {
+					padding: 10%;
+					background-color: #222322;
+					color: #fff;
+
+					#scholar_form {
+						input, select, textarea {
+							display: block;
+							width: 50%;
+						}
+						select option {
+							color:white;
+						}
+					}	
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#scholarship {
+		.container {
+			.cover {
+				.content {
+					.head {
+						.desc {
+							width: 70%;
+						}
+					}
+
+					.form {
+						#scholar_form {
+							input, select, textarea {
+								width: 70%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#scholarship {
+		.container {
+			.cover {
+				.content {
+					.head {
+						.desc {
+							width: 90%;
+						}
+					}
+
+					.form {
+						#scholar_form {
+							input, select, textarea {
+								width: 90%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
