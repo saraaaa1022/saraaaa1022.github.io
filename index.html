@@ -1,0 +1,549 @@
+
+
+<html>
+    <head>
+        <!-- header stuff goes here -->
+        <title>
+    hackBCA II - Built By High Schoolers, For High Schoolers
+</title>
+        <link href="/static/css/normalize.css" rel="stylesheet">
+        <link href="/static/css/bootstrap.css" rel="stylesheet">
+        <link href="/static/css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/slicknav.css">
+        <link href="/static/css/font-awesome.css" rel="stylesheet">
+        <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+        <link rel="shortcut icon" href="/static/img/logo.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@hackBCA">
+        <meta name="twitter:title" content="hackBCA">
+        <meta name="twitter:description" content="hackBCA is a hackathon for high school students in NJ. Unleash The Next Generation!">
+        <meta name="twitter:creator" content="@hackBCA">
+        <!-- Twitter Summary card images must be at least 200x200px -->
+        <meta name="twitter:image" content="http://www.hackbca.com/static/img/fb.jpg">
+
+        <meta property="og:title" content="hackBCA" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://hackbca.com/" />
+        <meta property="og:image" content="http://www.hackbca.com/static/img/fb.jpg" />
+        <meta property="og:description" content="Last year was epic, but hackBCA II is going to redefine the game. It doesn't matter if you have never programmed before, this is one of the the best places to get started! No experience needed. Register now!" />
+        <meta property="og:site_name" content="hackBCA" />
+        <meta property="fb:admins" content="1762730074" />
+        <script src="/static/js/jquery-1.11.2.min.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-67569241-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+        
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        
+<nav id="navbar">
+    <ul class="fixed-nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#guests">Guests</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+    </ul>
+</nav>
+
+        <div class="page-container">
+            
+    <section>
+        <div class="page-section" id="home">
+            <div class="container">
+    <div class="cover">
+        <div class="content">
+            <img src="/static/img/logo.png" alt="" class="logo">
+            <h1 id="title" class="title">hackBCA II</h1>
+<!--             <div class="button_container">
+                <a href="/register" class="register">Register</a>
+                <a href="/register/mentor" class="register">Mentor</a>
+            </div> -->
+            <h2 id="description" class="description">The easiest way to learn to code.</h2>
+            <div id="date-container">
+                <p id="date" class="date">March 28th - 29th, 2015 // Hackensack, NJ</p>
+            </div>
+        </div>
+        <div class="next-section">
+            <a href="#welcome"><i class="fa fa-chevron-down fa-2x"></i></a>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page-section" id="welcome">
+            <div class="container">
+    <h1 class="title">Everyone is welcome</h1>
+    <h2 class="description">No experience needed.</h2>
+    <h2 class="description">hackBCA is open to all high school students.</h2>
+    <h2 class="description">Spend 24 hours turning an idea into reality.</h2>
+</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page-section" id="about">
+            <div class="container">
+    <div class="questions">
+        <div class="center-wrap">
+            <div class="question">
+                <h1 class="big-q">When?</h1>
+                <span class="big-ans">March 28-29, 2015. 3pm to 3pm.</span>
+            </div>
+            <div class="question">
+                <h1 class="big-q">Where?</h1>
+                <span class="big-ans"><a href="//www.google.com/maps/place/Bergen+County+Technical+Schools/@40.90183,-74.033752,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x89c2fa74ede555a7:0xd381dc6c40eb8818!2sBergen+County+Technical+Schools!3b1!3m1!1s0x89c2fa74ede555a7:0xd381dc6c40eb8818">The Bergen County Academies High School, Hackensack NJ</a></span>
+                <span class="small-ans">(The NJTransit 175 bus from NYC GW Bridge Bus Terminal stops right in front of BCA.)</span>
+            </div>
+        </div>
+    </div>
+    <div id="map-container"></div>
+</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page-section" id="faq">
+            <div class="container">
+    <h1 class="title">FAQ</h1>
+    <div class="q-container">
+        <h3 class="question"><b>What is hackBCA?</b></h3>
+        <p class="answer">hackBCA II is one of the biggest high school hackathons in the nation! The purpose of this hackathon is to give high school students an easy way to learn how to code. Experienced hackers can also come and learn about new technologies that they can use. Check out an article about us on <a href="//www.nj.com/bergen/index.ssf/2014/02/bergen_county_teens_organize_hacking_contest_reddit_vine_co-founders_to_judge.html">NJ.com</a>!
+    </div>
+    <div class="q-container">
+        <h3 class="question"><b>What is a hackathon?</b></h3>
+        <p class="answer">A hackathon is an event in which teams spend the weekend building something awesome (and then demo it). hackBCA is open to anyone, from the absolute beginner to the professional hacker. Check out Dave Fontenot's post on <a href="//medium.com/hackathons-anonymous/3d5413601c05">"What is a hackathon?"</a></p>
+    </div>
+    <div class="q-container">
+        <h3 class="question"><b>What if I don't know how to code?</b></h3>
+        <p class="answer">There is absolutely nothing wrong with that! Hackathons provide an awesome opportunity for people to learn how to code. Even if you have never programmed before in your life, we will help you get started with the basics of programming and hopefully by the end of the hackathon, you will leave with a working application!</p>
+    </div>
+    <div class="q-container">
+        <h3 class="question"><b>How and when do I submit my hack?</b></h3>
+        <p class="answer">You must submit your hack by 11:00am on Sunday, but can still work on them after 11. We will send an email with more information on Sunday. Please do not start your project before the hackathon begins.</p>
+    </div>
+    <div class="q-container">
+        <h3 class="question"><b>What should I bring? How much does this event cost?</b></h3>
+        <p class="answer">You should bring your laptop (we won't provide computers) and charger, school ID, phone and charger, and power strips <i>(recommended)</i>. Food will be provided! This event costs absolutely nothing!</p>
+    </div>
+    <div class="q-container">
+        <h3 class="question"><b>Who can attend and how do the teams work?</b></h3>
+        <p class="answer">Any students in high school can attend! You do not have to be from the US. If you need help convincing your parents, contact us at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a>. You can work individually or with a team. For more information, check out our <a href="http://www.hackbca.com/rules" id="light">rules.</a></p>
+    </div>
+    <div class="q-container">
+        <h3 class="question"><b>I know a company that wants to sponsor, what should I tell them?</b></h3>
+        <p class="answer">Great! Tell them to contact us at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a></p>
+    </div>
+    <div class="q-container">
+        <h3 class="question"><b>Can I be a mentor at hackBCA II?</b></h3>
+        <p class="answer">Definitely! Simply click the mentor registration button above and enter your information to be registered.</p>
+    </div>
+    <div class="q-container">
+        <h3 class="question"><b>I have another question! How should I ask?</b></h3>
+        <p class="answer">If you have any other questions, don't hesitate to contact us at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com.</a> Additionally, check out our rules at <a href="http://www.hackbca.com/rules">hackbca.com/rules</a>.</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page-section" id="sponsors">
+            <div class="page-section" id="sponsors">
+    <div class="container">
+        <div class="cover">
+            <div class="content">
+                <h1 class="title">Sponsors</h1>
+                <div class="row cohost-row row-centered">
+                    <h2 class="cohost">Cohosted By:</h2>
+                    <a href="http://intel.com/" target="_blank">
+                        <div class="col-md-6 col-sm-8 col-xs-12 sponsor" style="background: url(/static/img/sponsor-logos/intel.png);"></div>
+                    </a>
+            	</div>
+                <div class="row sponsor-row">
+                    <h2>Sponsors:</h2>
+                    <div class="row row-centered top">
+                        <a href="http://makeschool.com/" target="_blank">
+                            <div class="col-md-3 col-sm-6 col-xs-8 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/makeschool.png);"></div>
+                        </a>
+                        <a href="http://flatironschool.com/" target="_blank">
+                            <div class="col-md-3 col-sm-6 col-xs-8 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/flatironschool.png);"></div>
+                        </a>
+                        <a href="http://ebay.com/" target="_blank">
+                            <div class="col-md-3 col-sm-6 col-xs-8 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/ebay.png);"></div>
+                        </a>
+                        <a href="http://wolfram.com/" target="_blank">
+                            <div class="col-md-3 col-sm-6 col-xs-8 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/wolfram.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="http://www.goldmansachs.com/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/goldmansachs.png);"></div>
+                        </a>
+                        <a href="https://minerva.kgi.edu/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/minerva.png);"></div>
+                        </a>
+                        <a href="https://twilio.com" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/twilio.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="https://roughdraft.vc/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/roughdraft.png);"></div>
+                        </a>
+                        <a href="https://sendgrid.com/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/sendgrid.png);"></div>
+                        </a>
+                        <a href="https://www.janestreet.com/" target="_blank"> 
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/janestreet.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="https://shapeways.com/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/shapeways.png);"></div>
+                        </a>
+                        <a href="http://www.undergroundshirts.com" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/ugp.png);"></div>
+                        </a>
+                        <a href="http://www.lenovo.com/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/lenovo.png);"></div>
+                        </a>
+                    </div>
+                </div>
+            	<div class="row small-sponsor-row">
+                    <div class="row row-centered">
+                        <a href="http://weare.ci" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/ci.png);"></div>
+                        </a>
+                        <a href="https://mozilla.org" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/mozilla.png);"></div>
+                        </a>
+                        <a href="http://genius.com/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/genius.png);"></div>
+                        </a>
+                        <a href="https://getpebble.com/" taget="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/pebble.png);"></div>
+                        </a>
+                        <a href="https://leangap.com/" taget="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/leangap.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="https://www.stickermule.com/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/stickermule.png);"></div>
+                        </a>
+                        <a href="https://filepicker.io" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/filepicker.png);"></div>
+                        </a>
+                        <a href="https://dropbox.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/dropbox.png);"></div>
+                        </a>
+                        <a href="https://teamtreehouse.com/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/treehouse.png);"></div>
+                        </a>
+                        <a href="http://www.techdayhq.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/tdhq.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="https://generalassemb.ly/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/generalassembly.png);"></div>
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/github.png);"></div>
+                        </a>
+                        <a href="http://www.lob.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/lob.png);"></div>
+                        </a>
+                        <a href="http://www.startupvitamins.com/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/startupvitamins.png);"></div>
+                        </a>
+                        <a href="http://garysguide.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/garysguide.png);"></div>
+                        </a>
+                    </div>
+            	</div> 
+                <div class="row partners row-centered">
+                    <h2>In Partnership with:</h2>
+                    <a href="https://mlh.io/" target="_blank">
+                        <div class="col-md-3 col-sm-6 col-xs-12 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/mlh.png);"></div>
+                    </a>
+                </div>
+                <div class="contact">
+                    <h3><a href="mailto:contact@hackbca.com" id="dark">Interested in Sponsoring?</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page-section" id="guests">
+            <div class="container">
+    <h1 class="title">Special Guests</h1>
+    <div class="guests">
+        <div class="row row-centered">
+            <div class="guest col-md-3 col-sm-6">
+                <a href="//www.tomlehman.com" target="_blank"><img src="/static/img/guests/tom_lehman.png"></a>
+                <h3 class="name">Tom Lehman</h3>
+                <p class="role">Emcee</p>
+                <p class="desc">Co-founder and CEO of <a href="http://genius.com/" target="_blank">Genius</a></p>
+            </div>
+            <div class="guest col-md-3 col-sm-6">
+                <a href="http://www.launchsummer.org" target="_blank"><img src="/static/img/guests/laurie_stach.jpg"></a>
+                <h3 class="name">Laurie Stach</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Program Manager of High School Education, <a href="http://entrepreneurship.mit.edu/" target="_blank">Martin Trust Center for MIT Entrepreneurship</a></p>
+            </div>
+            <div class="guest col-md-3 col-sm-6">
+                <a href="http://www.eliothorowitz.com/" target="_blank"><img src="/static/img/guests/eliot_horowitz.jpg"></a>
+                <h3 class="name">Eliot Horowitz</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Cofounder of <a href="http://www.mongodb.org/" target="_blank">MongoDB</a></p>
+            </div>
+        </div>
+        <div class="row row-centered">
+            <div class="guest col-md-3 col-sm-6">
+                <a href="https://twitter.com/amandapouchot" target="_blank"><img src="/static/img/guests/amandapouchot.png"></a>
+                <h3 class="name">Amanda Pouchot</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Co-Founder of <a href="http://www.levo.com/" target="_blank">Levo League</a> and <a href="http://www.together10.com/" target="_blank">Together10</a></p>
+            </div>
+            <div class="guest col-md-3 col-sm-6">
+                <a href="http://alexiskold.net/" target="_blank"><img src="/static/img/guests/alex_iskold.jpeg"></a>
+                <h3 class="name">Alex Iskold</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Managing Director at <a href="http://www.techstars.com/" target="_blank">Techstars NYC</a></p>
+            </div>
+            <div class="guest col-md-3 col-sm-6">
+                <img src="/static/img/guests/chris_castiglione.png">
+                <h3 class="name">Chris Castiglione</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Co-Founder and Head of Content at <a href="http://www.onemonth.com" target="_blank">One Month</a></p>
+            </div>
+<!--             <div class="guest col-md-3 col-sm-6">
+                <a href="http://www.launchsummer.org" target="_blank"><img src="/static/img/guests/laurie_stach.jpg"></a>
+                <h3 class="name">Laurie Stach</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Program Manager of High School Education, <a href="http://entrepreneurship.mit.edu/" target="_blank">Martin Trust Center for MIT Entrepreneurship</a></p>
+            </div>
+            <div class="guest col-md-3 col-sm-6">
+                <img src="/static/img/guests/eliot_horowitz.jpg">
+                <h3 class="name">Eliot Horowitz</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Cofounder of <a href="http://www.mongodb.org/" target="_blank">MongoDB</a></p>
+            </div>
+            <div class="guest col-md-3 col-sm-6">
+                <img src="/static/img/guests/alex_iskold.jpeg">
+                <h3 class="name">Alex Iskold</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Managing Director at <a href="http://www.techstars.com/" target="_blank">Techstars NYC</a></p>
+            </div> -->
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page-section" id="schedule">
+            <div class="container">
+    <h1 class="title">Schedule</h1>
+    <div class="schedule-container">
+        <div class="col-md-6">
+            <h2 class="day">Saturday, March 28th 2015</h2>
+            <div class="row">
+                <h3 class="time">3:00 PM - </h3>
+                <p class="description"><b>Registration Starts @ The Main Entrance</b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">4:00 PM - </h3>
+                <p class="description"><b>Opening Ceremony (Kickoff and API Demos) @ The Auditorium</b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">5:30 PM - </h3>
+                <p class="description"><b>Opening Ceremony Ends and Hacking Begins</b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">5:40 PM - </h3>
+                <p class="description">Intro to HTML & CSS Workshop by Flatiron School @ The Auditorium</p>
+            </div>
+            <div class="row">
+                <h3 class="time">5:40 PM - </h3>
+                <p class="description">Get Started with iOS Development by MakeSchool @ Room 110</p>
+            </div>
+            <div class="row">
+                <h3 class="time">5:40 PM - </h3>
+                <p class="description">Intro to Machine Learning by Baris Yuksel @ Room 134</p>
+            </div>
+            <div class="row">
+                <h3 class="time">7:15 PM - </h3>
+                <p class="description"><b>Dinner @ The Lower Caf (Chipotle, Kebabs, Thai)</b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">6:40 PM - </h3>
+                <p class="description">Best Practices to Good App Development by Apple @ Room 110</p>
+            </div>
+            <div class="row">
+                <h3 class="time">7:00 PM - </h3>
+                <p class="description">Intro to Web Development (Flask) @ Room 110</p>
+            </div>
+            <div class="row">
+                <h3 class="time">7:15 PM - </h3>
+                <p class="description">Putting Your Website on the Internet by Yash Gurditta @ Room 134</p>
+            </div>
+            <div class="row">
+                <h3 class="time">7:45 PM - </h3>
+                <p class="description">Intro to iOS Development by MakeSchool @ The Auditorium</p>
+            </div>
+            <div class="row">
+                <h3 class="time">7:45 PM - </h3>
+                <p class="description">Hardware Hacking Essentials by Rick Anderson @ Room 110</p>
+            </div>
+            <div class="row">
+                <h3 class="time">8:30 PM - </h3>
+                <p class="description">Get Started with ActiveFloor by Brett Kuehner @ Room 134</p>
+            </div>
+            <div class="row">
+                <h3 class="time">10:00 PM - </h3>
+                <p class="description">Stacked Overflow Hacker Game @ The Lower Caf</p>
+            </div>
+            <div class="row">
+                <h3 class="time">11:00 PM - </h3>
+                <p class="description"><b>Milk and Cookies @ The Gym</b></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2 class="day">Sunday, March 29th 2015</h2>
+            <div class="row">
+                <h3 class="time">1:00 AM - </h3>
+                <p class="description"><b>Pizza @ The Lower Caf Sponsored by Rough Draft Ventures</b></p>
+            </div>
+	    <div class="row">
+		<h3 class="time">2:30 AM to 6:00 AM - </h3>
+		<p class="description">Smash Tournament @ The Lower Caf</p>
+            <div class="row">
+                <h3 class="time">7:30 AM - </h3>
+                <p class="description"><b>Breakfast @ The Gym (Bagels and Pastries)</b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">11:00 AM - </h3>
+                <p class="description"><b>Projects must be submitted to <a href="http://hackbca2015.challengepost.com">Challenge Post</a></b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">11:30 PM - </h3>
+                <p class="description"><b>Lunch @ The Gym - Sandwiches and Pasta</b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">12:00 PM - </h3>
+                <p class="description"><b>Demos Begin @ Gym and Upper Caf</b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">2:00 PM - </h3>
+                <p class="description"><b>Demos End, Final Ceremony @ The Auditorium</b></p>
+            </div>
+            <div class="row">
+                <h3 class="time">3:00 PM - </h3>
+                <p class="description"><b>Thanks for hacking with us! Remember to check out at Registration desk before leaving</b></p>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+   
+    <div class='social_box'>
+        <div class='social'>
+            <a href="https://twitter.com/hackBCA" class="twitter-follow-button" data-show-count="false">Follow @hackBCA</a>
+        </div>
+        <div class='social'>
+            <div class="facebook-btn">
+                <div class="fb-like" data-href="https://www.facebook.com/BCAhackathon" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        
+    <footer>
+    <div class="footer">
+        <div class="darken-container">
+            <div class="container">
+                <h1 class="title">Stay Tuned</h1>
+                <div class="row">
+                    <div class="social">
+                        <a href="https://twitter.com/hackbca"><i class="fa fa-twitter-square fa-4x"></i></a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/BCAhackathon"><i class="fa fa-facebook-square fa-4x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-info">
+        <p id="credit">Made with <i class="fa fa-heart"></i> by hackBCA</p>
+        <p id="right-space"><a href="/rules">Rules</a></p>
+        <p id="right-space"><a href="/team">Team</a></p>
+        <p><a href="/press">Press</a></p>
+    </div>
+</footer>
+
+    </body>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.plusanchor.js"></script>
+
+    
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var mapCanvas = document.getElementById('map-container');
+                var mapOptions = {
+                    scrollwheel: false,
+                    center: new google.maps.LatLng(40.90220, -74.033752),
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.90220, -74.033752),
+                    title: 'Bergen County Academies'
+                });
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script type="text/javascript" src="/static/js/init.js"></script>
+    
+    <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
+
+</html>
