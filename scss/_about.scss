@@ -1,0 +1,116 @@
+#about {
+    background-color: #ecf0f1;
+
+    .container {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center;
+
+        .questions {
+            margin: 0 auto;
+            display: table;
+            padding: 5%;
+
+            .center-wrap {
+                display: table-cell;
+                vertical-align: middle;
+
+                .question {
+                    font-weight: 300;
+                    text-align: center;
+
+                    .big-q {
+                        @include title(#000, 300);
+                        margin: 0;
+                        display: inline-block;
+                    }
+
+                    .big-ans {
+                        display: block;
+                        font-weight: 300;
+                        margin: 0;
+                        font-size: 24px;
+                    }
+
+                    .small-ans {
+                        display: block;
+                        font-weight: 300;
+                        margin: 0;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        #map-container {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #about {
+        .container {
+            .questions {
+                .center-wrap {
+                    .question {
+                        .big-q {
+                            display: block;
+                        }
+                        
+                        .big-ans, .small-ans {
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #about {
+        .container {
+            .questions {
+                .center-wrap {
+                    .question {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about {
+        .container {
+            .questions {
+                .center-wrap {
+                    .question {
+                        .big-q {
+                            display: block;
+                            text-align: center;
+                        }
+
+                        .big-ans {
+                            font-size: 16px;
+                            display: block;
+                            text-align: center;
+                        }
+
+                        .small-ans {
+                            font-size: 14px;
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
