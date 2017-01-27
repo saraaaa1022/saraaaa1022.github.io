@@ -1,0 +1,171 @@
+@mixin sponsor() {
+    background-position: center center !important;
+    background-origin: content-box !important;
+    padding: 0 30px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+#sponsors {
+    background-color: #ecf0f1;
+
+    .container {
+        text-align: center;
+
+        .cover {
+            .content {
+                max-width: 1170px;
+                margin: 0 auto;
+
+                .title {
+                    margin-top: 0;
+                    @include title(#000, 300);
+                }
+
+                .row {
+                    .sponsor {
+                        @include sponsor();
+                    }
+
+                    &.cohost-row {
+                        margin-bottom: 2%;
+
+                        .cohost {
+                            font-weight: 400;
+                            text-align: center;
+                        }    
+
+                        .sponsor {
+                            height: 350px;
+                        }
+                    }
+
+                    &.sponsor-row {
+                        .sponsor {
+                            height: 200px;
+                        }
+                    }
+
+                    &.small-sponsor-row {
+                        margin: 0 auto;
+                        max-width: 1048px;
+
+                        .sponsor {
+                            padding: 1% !important;
+                            height: 150px;
+                        }
+                    }
+
+                    &.partners {
+                        .sponsor {
+                            height: 200px;
+                        }
+                    }
+                }
+
+                .contact {
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #sponsors {
+        .container {
+            .cover {
+                .content {
+                    .row {
+                        &.small-sponsor-row {
+                            .sponsor {
+                                padding: 0 1% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #sponsors {
+        .container {
+            .cover {
+                .content {
+                    .row {
+
+                        &.sponsor-row {
+                            .sponsor {
+                                height: 250px;
+                            }
+                        }
+
+                        &.small-sponsor-row {
+                            .sponsor {
+                                padding: 0 5% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #sponsors {
+        .container {
+            .cover {
+                .content {
+                    .row {
+                        &.sponsor-row {
+                            .sponsor {
+                                height: 150px;
+                            }
+                        }
+
+                        &.small-sponsor-row {
+                            .sponsor {
+                                height: 100px;
+                                padding: 0 5% !important;
+                            }
+                        }
+                        &.partners {
+                            .sponsor {
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sponsors {
+        .container {
+            .cover {
+                .content {
+                    .row {
+                        &.sponsor-row {
+                            .sponsor {
+                                height: 150px;
+                                width: 80%;
+                            }
+                        }
+
+                        &.top {
+                            .sponsor {
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
