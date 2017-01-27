@@ -1,0 +1,39 @@
+#schedule {
+    background-color: #ecf0f1;
+    text-align: center;
+
+    .container {
+        .title {
+            text-align: center;
+        }
+
+        .schedule-container {
+            width: 90%;
+            display: inline-block;
+            margin-left: 5%;
+
+            .day {
+                text-align: left;
+            }
+
+            .row {
+                padding: 10px 0px;
+                text-align: left;
+                margin: 0;
+
+                .time {
+                    font-weight: 400;
+                    display: inline;
+                    margin: 0;
+                }
+
+                .description {
+                    font-weight: 300;
+                    display: inline;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
