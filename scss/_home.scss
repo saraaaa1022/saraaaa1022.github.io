@@ -1,0 +1,225 @@
+#home {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: url(/static/img/background.jpg) no-repeat center center scroll;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        padding: 0;
+
+        .cover {
+            .content {
+                color: #fff;
+                text-align: center;
+
+                #title {
+                    font-size: 144px;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+
+                .button_container {
+                    margin-top: 12px;
+                    margin-bottom: 24px;
+                }
+
+                .register {
+                    padding: 15px 30px;
+                    border: solid 2px #d86400;
+                    border-radius: 5px;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    background-color: #d86400;
+                    color: #fff;
+                    font-size: 30px;
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    transition: all 0.2s;
+                    margin: 0px 12px;
+
+                    &:hover {
+                        background-color: #fff;
+                        border-color: #fff;
+                        color: #d86400;
+                    }
+                }
+
+                #description {
+                    font-weight: 400;
+                    margin: 2% 0 0 0;
+                }
+
+                #date-container {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 1%;
+
+                    #date {
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .next-section {
+                position: absolute;
+                left: 0; right: 0;
+                text-align: center;
+                bottom: 1%;
+
+                a {
+                    color: #fff;
+
+                    &:visited {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 720px) {
+    #home {
+        .container {
+            .cover {
+                .content {
+                    #title {
+                        font-size: 98px;
+                        margin-top: 0px;
+                    }
+
+                    #description {
+                        margin-top: 1%;
+                    }
+
+                    .register {
+                        padding: 10px 20px;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #home {
+        .container {
+            .cover {
+                .content {
+                    #title {
+                        margin: 0;
+                    }
+                }
+
+                .next-section {
+                    text-align: right;
+                    padding-right: 1%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        .container {
+            .cover {
+                .content {
+                    .sponsor-wrapper {
+                        margin-top: 24px;
+                    }
+
+                    #title {
+                        font-size: 96px;
+                    }
+
+                    .register {
+                        padding: 10px 20px;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #home {
+        .container {
+            .cover {
+                .content {
+                    #title {
+                        font-size: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #home {
+        .container {
+            .cover {
+                .content {
+                    #title {
+                        font-size: 48px;
+                        margin: 0 0 5%;
+                    }
+
+                    .button_container {
+                        margin-top: 6px;
+                        margin-bottom: 12px;
+                    }
+
+                    #description {
+                        margin-top: 7%;
+                    }
+
+                    #date-container {
+                        margin-top: 5%;
+
+                        #date {
+                            margin-top: 2%;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #home {
+        .container {
+            .cover {
+                .content {
+                    .register {
+                        padding: 5px 10px;
+                        font-size: 24px;
+                    }
+                    
+                    .sponsor-wrapper {
+                        .btn {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
