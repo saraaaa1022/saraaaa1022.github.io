@@ -1,0 +1,99 @@
+#navbar {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ecf0f1;
+    text-align: center;
+
+    .fixed-nav {
+        list-style: none;
+        display: inline-block;
+        height: 100%;
+        font-size: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            height: 100%;
+            -webkit-transition: border-bottom 200ms ease;
+            -moz-transition: border-bottom 200ms ease;
+            -ms-transition: border-bottom 200ms ease;
+            -o-transition: border-bottom 200ms ease;
+            transition: border-bottom 200ms ease;
+
+            a {
+                padding: 0 25px;
+                color: #000;
+                font-size: 20px;
+                font-family: "Proxima Nova Light";
+                font-weight: 300;
+                line-height: 2.4;
+            }
+
+            &.active {
+                border-bottom: solid 5px #d86400;
+            }
+
+            &:hover {
+                border-bottom: solid 5px #fbc838;
+            }
+        }
+    }
+}
+
+.slicknav_menu {
+	display: none;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding: 0 !important;
+    color: #fff;
+
+    .slicknav_nav {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        background-color: #4c4c4c;
+
+        li {
+            display: block;
+            width: 100%;
+            background-color: #4c4c4c;
+            color: #FFF;
+            text-align: right;
+            border-radius: 0px;
+            border: 0;
+            margin: 0;
+
+            a {
+                width: 100%;
+                color: #FFF;
+                border-radius: 0px;
+                padding-right: 15px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .fixed-nav {
+        display: none !important;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    #navbar {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.slicknav_btn {
+    border-radius: 0;
+    margin-top: 10px;
+}
+
