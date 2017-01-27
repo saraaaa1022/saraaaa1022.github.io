@@ -1,0 +1,20 @@
+#error {
+    text-align: center;
+    background: url(/static/img/background.jpg) no-repeat center center scroll;
+    color: #FFF;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+
+    .container {
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        .logo {
+            width: 200px;
+        }
+    }
+}
+
