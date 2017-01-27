@@ -1,0 +1,227 @@
+#register {
+
+    padding: 0;
+    background: url(/static/img/background.jpg) no-repeat center center scroll;
+    color: #FFF;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 10%;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        .cover {
+            .content {
+                color: #FFF;
+                text-align: center;
+
+                .logo {
+                    width: 200px;
+                }
+
+                #title {
+                    font-weight: 400;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+
+                .mentor {
+                    display:none;
+                }
+
+                .registration_type {
+                    .button_selected {
+                        padding: 1px 20px;
+                        margin: 0px 4px;
+                        border: solid 2px #fff;
+                        border-radius: 5px;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        background-color: #fff;
+                        color: #d54d15;
+                        font-size: 24px;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        transition: all 0.2s;
+                        margin-top: 2%;
+                    }
+                    .button {
+                        padding: 1px 20px;
+                        margin: 0px 4px;
+                        border: solid 2px $primary-color;
+                        border-radius: 5px;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        background-color: $primary-color;
+                        color: #fff;
+                        font-size: 24px;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        transition: all 0.2s;
+                        margin-top: 2%;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: $primary-color;
+                            border: solid 2px #fff;
+                        }
+                    }
+                }
+
+                .registration {
+                    margin: 0 auto;
+                    margin-top: 12px;
+
+                    .row {
+                        margin: 0 auto;
+                        max-width: 50%;
+
+                        input {
+                            width: 45%;
+                        }
+
+                        select {
+                            width: 45%;
+                        }
+
+                        .pad-right {
+                            margin-right: 2%;
+                        }
+
+                        .full-width {
+                            width: 92%;
+                        }
+
+                        .row-part {
+                            display: inline-block;
+                            width: 45%;
+
+                            #grade, #gender {
+                                width: 47%;
+                            }
+
+                            .pad-right {
+                                margin-right: 4%;
+                            }
+                        }
+
+                    }
+                    
+                    .submit-button {
+                        padding: 10px 20px;
+                        border: solid 2px $primary-color;
+                        border-radius: 5px;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        background-color: $primary-color;
+                        color: #fff;
+                        font-size: 24px;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        transition: all 0.2s;
+                        margin-top: 2%;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: $primary-color;
+                            border: solid 2px #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #register {
+        .container {
+            .cover {
+                .content {
+                    .registration {
+                        .row {
+                            input, select {
+                                display: block;
+                                width: 100%;
+                            }
+
+                            .pad-right {
+                                margin: 0;
+                            }
+
+                            .full-width {
+                                width: 100%;
+                            }
+
+                            .row-part {
+                                width: 100%;
+
+                                #grade, #gender {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #register {
+        .container {
+            .cover {
+                .content {
+                    .logo {
+                        width: 100px;
+                    }
+
+                    #title {
+                        margin-bottom: 0;
+                    }
+
+                    .registration_type {
+                        .button_config {
+                            margin-bottom: 6px;
+                        }
+                    }
+                    .registration {
+                        margin: 0 auto;
+                        max-width: 90%;
+
+                        .row {
+                            max-width: 100%;
+
+                            input, select {
+                                font-size: 16px;
+                                width: 100%;
+                                margin: 0 auto 2% auto;
+                            }
+
+                            .pad-right {
+                                margin-bottom: 2%;
+                            }
+                        }
+
+                        .submit-button {
+                            padding: 5px 10px;
+                            font-size: 20px;
+                            margin-top: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
