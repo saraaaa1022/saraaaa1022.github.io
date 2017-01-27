@@ -1,0 +1,321 @@
+/* Font */
+@font-face {
+    font-family: "Proxima Nova Light";
+    src: url("/static/fonts/ProximaNova-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url("/static/fonts/ProximaNova-Bold.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Proxima Nova ExtraBold";
+    src: url("/static/fonts/ProximaNova-Extrabold.otf") format("opentype");
+    font-weight: 500;
+}
+
+$primary-color: #d86400;
+
+/* Styles */
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Proxima Nova Light";
+    font-weight: 300;
+    color: #000;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 { font-size: 72px; margin: 0 0 2% 0; }
+h2 { font-size: 40px; margin: 0 0 1% 0; }
+h3 { font-size: 28px; margin: 0; }
+p { font-size: 20px; }
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    color: #19b5fe;
+
+    &:hover, &:link, &:visited, &:active {
+        text-decoration: none;
+    }
+
+    &:visited, &:active {
+        color: #19B5FE;
+    }
+
+    &:hover {
+        color: #3498db;
+    }
+}
+
+.hover-fade {
+    -webkit-filter: grayscale(100%);
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+
+    &:hover {
+        -webkit-filter: grayscale(0%);
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+    margin: 0 auto 1% auto;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+
+    &[type="checkbox"] {
+        display: none;
+    }
+
+    &[type="checkbox"] + label {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 1% 2%;
+        border: solid 2px #fff;
+        -webkit-transition: all 200ms ease-out;
+        -moz-transition: all 200ms ease-out;
+        -ms-transition: all 200ms ease-out;
+        -o-transition: all 200ms ease-out;
+        transition: all 200ms ease-out;
+
+        i {
+            display: none;
+            padding-right: 5px;
+            color: #000;
+        }
+    }
+
+    &[type="checkbox"]:checked + label {
+        background-color: #fff;
+        color: #000;
+
+        i {
+            display: inline-block;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #bdc3c7;
+}
+
+:-moz-placeholder {
+   color: #bdc3c7;
+}
+
+::-moz-placeholder {
+   color: #bdc3c7;
+}
+
+:-ms-input-placeholder {
+   color: #bdc3c7;
+}
+
+select {
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+    margin: 0 auto 1% auto;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: transparent url(/static/img/dropdown.png) no-repeat right center;
+    border-radius: 0px;
+
+    option {
+        color: #fff;
+    }
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    box-shadow: none;
+    margin: 1% auto;
+    border: 2px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border-radius: 0px;
+    resize: vertical;
+}
+
+.section-link {
+    margin: 5px 25px;
+    text-transform: uppercase;
+
+    a {
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+    }
+}
+
+@mixin title($color, $weight) {
+    font-weight: $weight;
+    text-align: center;
+    color: $color;
+}
+
+.logo { width: 200px; }
+
+.cohost-sponsor {
+    padding-bottom: 2%;
+
+    h3 {
+        padding: 1%;
+    }
+
+    .cohost-top {
+        width: 175px;
+    }
+}
+
+.page-container {
+
+    .page-section {
+        width: 100%;
+        display: table;
+
+        .container {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 10%;
+        }
+    }
+}
+
+.social_box {
+    position: fixed;
+    top: 65px;
+    right: 10px;
+}
+
+.social { padding: 5px 0px; }
+
+.submit-button {
+    padding: 10px 20px;
+    border: solid 2px $primary-color;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 24px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+
+    &:hover {
+        background-color: #fff;
+        color: $primary-color;
+        border: solid 2px #fff;
+    }
+}
+
+.row.row-centered {
+    text-align: center;
+
+    .sponsor, .staff, .guest, .element {
+        display: inline-block;
+        float: none;
+        text-align: center;
+        margin-left: -4px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    input, select, textarea {
+        font-size: 16px;
+        margin: 0 auto 2% auto;
+
+        &[type="checkbox"] + label {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .social_box {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 { font-size: 60px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 24px; }
+    p { font-size: 16px; }
+
+    .cohost-sponsor {
+        .cohost-top {
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 { font-size: 44px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 20px; }
+    p { font-size: 16px; }
+    .logo { width: 150px; }
+
+    input[type="checkbox"] + label {
+        padding: 2%;
+    }
+}
+
